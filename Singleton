@@ -1,0 +1,16 @@
+public class DBConn {
+    private DBConn(){};
+    private static DBConn instance;
+    public static DBConn getInstance(){
+        if (instance == null){
+            instance = new DBConn();
+        }
+        return instance;
+    }
+    public void connecta() {
+
+        System.out.println("Conectou com o banco X");
+
+    }
+
+}
