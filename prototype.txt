@@ -1,0 +1,15 @@
+O padrão de projeto Prototype é um padrão de design criacional que se concentra na 
+clonagem de objetos existentes. Em vez de construir novos objetos do zero, 
+ele permite que você crie cópias exatas de um objeto-protótipo, de forma que o processo 
+de criação de objetos seja mais eficiente.
+
+Componentes do padrão Prototype
+O padrão Prototype é composto por três partes principais:
+
+Prototype (Protótipo): A interface ou classe abstrata que declara a interface para clonar o objeto. 
+No nosso exemplo, a interface FormaGeometrica.
+
+ConcretePrototype (Protótipo Concreto): As classes que implementam a interface Prototype e
+ criam cópias de si mesmas. No nosso exemplo, as classes Circulo e Retangulo.
+
+Client (Cliente): A classe que cria um novo objeto a partir de um protótipo, solicitando uma cópia dele.
