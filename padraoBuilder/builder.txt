@@ -1,0 +1,27 @@
+O padrão de projeto Builder é um padrão de design criacional que ajuda a construir objetos
+ complexos passo a passo. Ele separa a construção de um objeto da sua representação,
+ o que permite que o mesmo processo de construção crie diferentes representações.
+O padrão de projeto Builder é um padrão de design criacional que ajuda a construir objetos complexos passo a passo. Ele separa a construção de um objeto da sua representação, o que permite que o mesmo processo de construção crie diferentes representações.
+
+Imagine que você está construindo um sanduíche. Um sanduíche tem vários componentes,
+ como pão, recheio, queijo, molhos e vegetais. Dependendo do seu gosto, você pode querer um
+ sanduíche simples com apenas pão e queijo, ou um sanduíche completo com todos os ingredientes.
+
+Se você criasse um construtor com todos os parâmetros possíveis para o sanduíche, 
+o construtor ficaria enorme e difícil de usar.
+
+É aí que o padrão Builder entra. Ele permite que você crie o sanduíche passo a passo,
+ adicionando cada ingrediente à medida que avança.
+
+Componentes do padrão Builder
+O padrão Builder é composto por quatro partes principais:
+
+Produto (Product): O objeto complexo que está sendo construído. No nosso exemplo, o Sanduiche.
+
+Builder (Construtor): A interface que define os passos para construir o Produto. No nosso exemplo,
+ a interface SanduicheBuilder.
+
+ConcreteBuilder (Construtor Concreto): As classes que implementam a interface Builder e constroem o Produto concreto. No nosso exemplo, as classes SanduicheSimplesBuilder e SanduicheCompletoBuilder.
+
+Director (Diretor): A classe que orquestra a construção do Produto usando o Builder. No nosso exemplo,
+ a classe SanduicheDirector.
